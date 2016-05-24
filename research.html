@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Davide Valeriani - BCI Researcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font.css" type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                        <li class="active"><a href="research.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Research</a></li>
+                        <li><a href="publications.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publications</a></li>
+                        <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
+                        <li><a href="notes.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notes</a></li>
+                        <li><a href="more.html"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span> More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>PhD - Improving group decision making with collaborative Brain-Computer Interfaces</h3>
+                    <p>
+                        My research is focused on using Brain-Computer Interfaces (BCIs) to improve group decision making. We are aware that group decisions are usually much better than the decisions made by an individual. This is why we usually make critical decisions in groups (e.g., committees, parliaments, etc.). Group decisions are the result of a process of integration of the multiple perspectives of its members, each of which brings a novel piece of information that might be useful for making the correct decision. This is what we call the <em>wisdom of crowds</em> (<a href="https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds" target="_blank">a good book about that</a>).</p>
+                    <p>
+                        Sometimes group decisions are not possible. For example, when we have time constraints that do not allow a complete discussion between the team members (that is a vital step of that integration process described above) or when a strong team leader can transform the group decision in an unilateral one. In these circumstances, group decisions could actually be worse than individual ones.
+                    </p>
+                    <p>
+                        During my PhD, I investigated the possibility of using BCIs to extract neural information related to the confidence in a decision from the EEG signals of individual users. <strong>The BCI uses machine learning techniques to build an estimation of the confidence of each decision maker</strong> based on these neural correlates, response times (RTs) and other physiological measures (e.g., eye movements, skin conductance). These estimates are then used to weigh individual decisions proportionally and build a group decision. I call this <strong>collaborative BCIs</strong> (cBCIs) as multiple BCIs (i.e., one per user) are used jointly to achieve a goal (i.e., improve group decisions).
+                    </p>
+                    <p align="center"><img src="img/architecture.png" width="90%" vspace="15px" /></p>
+                    <p>
+                        We firstly tested this approach with an easy <strong>visual matching task</strong> (see <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0102693" target="_blank">this paper</a>) where
+                        users were presented two displays containing three shapes of different shades of grey and had to decide if the two
+                        stimuli contained the same shapes (picture below on the left).
+                    </p>
+                    <p>
+                        Principal Component Analysis (PCA) has been used to extract neural features from the response-locked EEG epochs.
+                        The figure below (right) shows the mean error rates of groups of different sizes where group decisions were obtained by using the standard majority rule (black) or a weighted majority where the weighs were wither the RTs (blue), the confidence estimated by the BCI using EEG features (green) and a combination of RTs and the BCI confidence (red).
+                    </p>
+                    <p align="center">
+                        <img src="img/stim_plos.png" height="200px" vspace="15px" />
+                        <img src="img/errors_plos.png" height="200px" vspace="15px" />
+                    </p>
+                    <p>
+                        These promising results pushed me to further improve the system and put it on test with other tasks that were <em>more complex</em> and <em>realistic</em>.
+                    </p>
+                    <p>
+                        Firstly, I tested this cBCI with a <strong>visual-search</strong> task using artificial stimuli (see <a href="pub/NER2015_1.pdf" target="_blank">this paper</a> and the stimulus below on the left).
+                        Here, the cBCI has also been improved by changing the method
+                        used to extract neural features from the PCA used before to <strong>Common Spatial Pattern</strong> (CSP). This
+                        reduced the dimensionality of the problem and speed up the system by two orders of magnitudes. Moreover, stimulus-locked EEG
+                        epochs have been included in the analysis as they contain relevant information about the decision confidence that improved
+                        the performance of BCI-assisted groups.
+                    </p>
+                    <p>
+                        A similar visual-search experiment has been conducted with <strong>realistic stimuli</strong> (see <a href="pub/NER2015_2.pdf" target="_blank">this paper</a> and the stimulus below on the right).
+                        Here, the information about the decision confidence was extracted from the neural signals, the RTs
+                        and the <strong>eye movements</strong>. Eye movements and blinks, surprisingly, seem to correlate
+                        with the decision confidence and their inclusion significantly increase the performance of the system.
+                    </p>
+                    <p align="center">
+                        <img src="img/stim_bars.png" height="200px" vspace="15px" />
+                        <img src="img/stim_bears.jpg" height="200px" vspace="15px" />
+                    </p>
+                    <p>
+                        At the moment, I am testing the impact of interaction on group performance. More details on this will be added once the results have been published.
+                    </p>
+                    <hr>
+                    <h3>Cybathlon 2016</h3>
+                    <p>
+                        I am a member of the <a href="http://essexbcis.uk/main/cybathlon/team/" target="_blank">Essex Brainstormers</a>, the team of BCI researchers (led by Ana Matran-Fernandez) from the University of Essex that will compete in the <a href="http://www.cybathlon.ethz.ch/en/" target="_blank">Cybathlon 2016</a>. Cybathlon is the first international championship for parathletes assisted by technologies competing in six different disciplines, including BCI. In the BCI race, pilots have to control a videogame (3 commands available) with their mind.
+                    </p>
+                    <p>
+                        Our team is developing a whole asynchronous BCI that is able to recognise different mental tasks from the EEG signals recorded from our pilot David and map them to the various commands supported by the game. The system is obviously very complex as it includes the development of various parts. One of the most difficult parts is the multi-class classification. For this task, we developed a multilayer ensemble (see <a href="pub/ECDA2015.pdf">this abstract</a> and the relative <a href="lectures/2015/ecda2015.pdf">presentation</a>).
+                        The BrainStormers are supported by a Research Innovative Fund grant and by a crowdfunding campaign with which we raised more than &pound;3,000.
+                    </p>
+                    <p>
+                        The research conducted with the Brainstormers has attracted the interest of the media including <a href="http://www.itv.com/news/anglia/2016-05-18/essex-team-hope-to-storm-to-success-at-worlds-first-ever-cybathlon-competition/" target="_blank"><strong>ITV Anglia</strong></a> and <a href="https://cybathlon.wordpress.com/2015/01/29/brainstormers-and-bcis-on-your-marks-set-think/" target="_blank">Inside Cybathlon</a>.
+                    </p>
+                    <p align="center">
+                        <img src="img/david_mock.png" width="400px" />
+                    </p>
+                    <hr>
+                    <h3>EyeWink</h3>
+                    <img src="img/eyewink_logo.png" align="right" hspace="15px">
+                    <p>
+                        EyeWink is a concept of a wearable device that allows a user to control his smartphone with eye winks. It detects muscular activity around the eyes by means of two electrodes placed on the forehead. The recorded signals are then processed by an electronic board to identify if the user had winked with either eye (see <a href="pub/CEEC2015.pdf">this paper</a>). Then, winks are transformed in commands and sent to the smartphone to be executed. The user can select which command he/she wants to perform with either eye via a smartphone app.
+                    </p>
+                    <p>
+                        After pitching the idea at <a href="http://hackthebrain.uk/" target="_blank">HackTheBrain UK</a>, my team developed a first fully-working prototype in only 8 hours using <a href="http://openbci.com/community/hack-the-brain-uk-control-your-smartphone-by-winking/" target="_blank">OpenBCI</a>. After winning the hackathon, I decided to keep working on the idea with Ana Matran-Fernandez to bring it to the market. In November 2015 we started a <a href="https://click.hubbub.net/p/eye-wink" target="_blank">crowdfunding campaign</a> that allowed us to raise &pound;4,605 to support the development, and in December 2015 I co-founded <a href="https://www.eyewink.net" target="_blank">EyeWink Ltd</a>.
+                    </p>
+                    <p>
+                        EyeWink has attracted a lot of interest from the media and the public. We have presented the technology in the London Science Museum twice, once in April 2015 within the exhibition "You have been upgraded" and once in April 2016 for the Science Museum Lates focused on neuroscience. We have appeared on
+                        <strong><a href="http://www.itv.com/news/anglia/2015-06-10/eye-phone-students-develop-new-tech-to-operate-mobiles/" target="_blank">ITV Anglia</a></strong>,
+                        <a href="http://www.popsci.com/control-your-projects-with-your-mind" target="_blank">Popular Science</a>,
+                        <a href="http://motherboard.vice.com/read/brain-hackathon-hacking-brainwaves-to-extend-the-mind" target="_blank">Motherboard magazine</a>,
+                        <a href="http://www.idgconnect.com/blog-abstract/9663/the-uk-hack-brain-event" target="_blank">IDG connect blog</a>,
+                        <a href="http://www.idgconnect.com/abstract/10691/crowdsourcing-innovation-davide-valeriani-ana-matran-fernandez-eyewink" target="_blank">IDG connect innovation</a>,
+                        <a href="http://neurotechnews.com/?p=823" target="_blank">Neurotech news</a>,
+                        <a href="http://www.christinethecoach.com/eyewink/" target="_blank">Christine Michaelis blog</a>,
+                        <a href="https://www.essex.ac.uk/csee/news_and_seminars/newsEvent.aspx?e_id=7553" target="_blank">our department newsletter</a>,
+                        the <a href="http://blogs.essex.ac.uk/essexdaily/2015/05/11/its-all-in-a-winkor-a-blink/" target="_blank">University of Essex daily news</a>,
+                        <a href="http://www.nerri.eu/eng/news-highlights/nerri-news/hack-the-brain.aspx" target="_blank">NERRI project blog</a>,
+                        some Italian newspapers including <a href="http://www.ilfattoquotidiano.it/2015/12/15/dottorato-a-londra-dopo-colloquio-via-skype-impensabile-in-italia-lavorare-al-mio-progetto-ultratecnologico/2302876/" target="_blank">Il Fatto Quotidiano</a>,
+                        <a href="http://www.24emilia.com/Sezione.jsp?idSezione=68111" target="_blank">24Emilia</a>,
+                        <a href="http://www.ilrestodelcarlino.it/reggio-emilia/eyewink-davide-valeriani-1.1537012" target="_blank">Resto del Carlino</a>,
+                        <a href="http://gazzettadireggio.gelocal.it/reggio/cronaca/2015/11/24/news/lo-smartphone-lo-comandi-con-gli-occhi-1.12497579" target="_blank">Gazzetta di Reggio</a>,
+                        and radios like <a href="https://www.youtube.com/watch?v=403Uc5LlKE8" target="_blank">Radio Citt&agrave; Aperta</a>.
+                    </p>
+                    <p align="center">
+                        <img src="img/eyewink_lates.jpg" height="300px" />
+                        <iframe width="533" height="300" src="https://www.youtube.com/embed/KS_V3HDkAkg" frameborder="0" allowfullscreen align="right"></iframe>
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p class="muted credit">Copyright &copy; 2016 Davide Valeriani. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55902637-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+</body>
+</html>
