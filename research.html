@@ -24,9 +24,16 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" role="navigation">
                         <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-                        <li class="active"><a href="research.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Research</a></li>
+                        <li class="active dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Research <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="research.html#phd">Group Decision Making</a></li>
+                                <li><a href="research.html#cybathlon">Cybathlon 2016</a></li>
+                                <li><a href="research.html#eyewink">EyeWink</a></li>
+                            </ul>
+                        </li>
                         <li><a href="publications.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publications</a></li>
                         <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
                         <li><a href="notes.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notes</a></li>
@@ -36,9 +43,10 @@
             </div>
         </nav>
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Research</h2>
             <div class="row">
                 <div class="col-md-12">
+                    <a name="phd" class="anchor"></a>
                     <h3>PhD - Improving group decision making with collaborative Brain-Computer Interfaces</h3>
                     <p>
                         My research is focused on using Brain-Computer Interfaces (BCIs) to improve group decision making. We are aware that group decisions are usually much better than the decisions made by an individual. This is why we usually make critical decisions in groups (e.g., committees, parliaments, etc.). Group decisions are the result of a process of integration of the multiple perspectives of its members, each of which brings a novel piece of information that might be useful for making the correct decision. This is what we call the <em>wisdom of crowds</em> (<a href="https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds" target="_blank">a good book about that</a>).</p>
@@ -87,21 +95,24 @@
                         At the moment, I am testing the impact of interaction on group performance. More details on this will be added once the results have been published.
                     </p>
                     <hr>
+                    <a name="cybathlon" class="anchor"></a>
                     <h3>Cybathlon 2016 - Bronze medal to our team</h3>
                     <p>
-                        I am a member of the <a href="http://essexbcis.uk/main/cybathlon/team/" target="_blank">Essex Brainstormers</a>, the student team from the University of Essex that competed in the <a href="http://www.cybathlon.ethz.ch/en/" target="_blank">Cybathlon 2016</a>. Cybathlon is the first international championship for parathletes assisted by technologies competing in six different disciplines, including BCI. In the BCI race, pilots had to control a videogame (3 commands available) with their mind. Our team ended up in the third position, bringing back a <strong>bronze medal</strong> to the UK.
+                        I am a member of the <a href="http://essexbcis.uk/main/cybathlon/team/" target="_blank">Essex Brainstormers</a>, the student team from the University of Essex that competed in the <a href="http://www.cybathlon.ethz.ch/en/" target="_blank">Cybathlon 2016</a>. Cybathlon is the first international championship for parathletes assisted by technologies competing in six different disciplines, including BCI. In the BCI race, pilots had to control a videogame (3 commands available) with their mind. Our team ended up in the third position, bringing back a <strong>bronze medal</strong> to the UK (see the <a href="http://www.cybathlon.ethz.ch/en/cybathlon-news/cybathlon-results/bci-results.html" target="blank">final ranking</a>).
                     </p>
                     <p>
-                        Our team developed a whole asynchronous BCI able to recognise different mental tasks from the EEG signals recorded from our pilot <a href="http://essexbcis.uk/main/cybathlon/pilot/" target="blank">David</a> and map them to the various commands supported by the game. The system is obviously very complex as it includes the development of various parts. One of the most difficult parts is the multi-class classification. For this task, we developed a multilayer ensemble (see <a href="pub/ECDA2015.pdf">this abstract</a> and the relative <a href="lectures/2015/ecda2015.pdf">presentation</a>).
+                        Our team developed a whole asynchronous BCI able to recognise different mental tasks from the EEG signals recorded from our pilot <a href="http://essexbcis.uk/main/cybathlon/pilot/" target="blank">David</a> and map them to the various commands supported by the game. The system is obviously very complex as it includes the development of various parts. One of the most difficult parts to implement was the multi-class classification. For this task, we developed a multilayer ensemble (see <a href="pub/ECDA2015.pdf">this abstract</a> and the relative <a href="lectures/2015/ecda2015.pdf">presentation</a>).
                     </p>
                     <p>
                         The BrainStormers were supported by <a href="http://www.biosemi.com/" target="blank">Biosemi</a>, by the University of Essex (via a Research Innovative Fund grant) and by a crowdfunding campaign with which we raised more than &pound;3,000.
                         The research conducted with the Brainstormers has attracted the interest of the media including <a href="http://www.itv.com/news/anglia/2016-05-18/essex-team-hope-to-storm-to-success-at-worlds-first-ever-cybathlon-competition/" target="_blank"><strong>ITV Anglia</strong></a> and <a href="https://cybathlon.wordpress.com/2015/01/29/brainstormers-and-bcis-on-your-marks-set-think/" target="_blank">Inside Cybathlon</a>.
                     </p>
                     <p align="center">
-                        <img src="img/david_mock.png" width="400px" />
+                        <img src="img/david_race.jpg" height="300px" />
+                        <img src="img/brainstormers.jpg" height="300px" />
                     </p>
                     <hr>
+                    <a name="eyewink" class="anchor"></a>
                     <h3>EyeWink</h3>
                     <img src="img/eyewink_logo.png" align="right" hspace="15px">
                     <p>
