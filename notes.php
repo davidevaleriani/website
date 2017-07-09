@@ -37,7 +37,7 @@
                         </li>
                         <li><a href="publications.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publications</a></li>
                         <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
-                        <li><a href="notes.php" class="active"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Notes</a></li>
+                        <li><a href="notes.php" class="active"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Unipr</a></li>
                         <li><a href="more.html"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span> More</a></li>
                     </ul>
                 </div>
@@ -118,8 +118,8 @@ for($i=0;$i<sizeof($narray);$i++)
 	else {
 		$dim.=" KB";
 	}
-	if ($tipo=="cartella.png") echo "<tr><td align=center><img src=\"immagini/$tipo\" height=\"20px\"></td><td align=center><a href=\"".$_SERVER["PHP_SELF"]."?cartella=$cartella/$descrizione\">$descrizione</a><br></td><td align=center>&nbsp;</td></tr>";
-    else echo "<tr><td align=center><img src=\"immagini/$tipo\" height=\"20px\"></td><td align=center><a target=\"_blank\" href=\"download.php?file=$path$file\">$descrizione</a><br></td><td align=center>$dim</td></tr>";
+	if ($tipo=="cartella.png") echo "<tr><td align=center><img src=\"img/$tipo\" height=\"20px\"></td><td align=center><a href=\"".$_SERVER["PHP_SELF"]."?cartella=$cartella/$descrizione\">$descrizione</a><br></td><td align=center>&nbsp;</td></tr>";
+    else echo "<tr><td align=center><img src=\"img/$tipo\" height=\"20px\"></td><td align=center><a target=\"_blank\" href=\"$path$file\">$descrizione</a><br></td><td align=center>$dim</td></tr>";
 }
 }
 closedir($dir_handle);
