@@ -37,7 +37,8 @@
                         </li>
                         <li><a href="publications.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publications</a></li>
                         <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
-                        <li><a href="notes.php" class="active"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Unipr</a></li>
+                        <li><a href="media.html"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Talks & Media</a></li>
+                        <li class="active"><a href="notes.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Unipr</a></li>
                         <li><a href="more.html"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span> More</a></li>
                     </ul>
                 </div>
