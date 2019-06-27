@@ -23,7 +23,7 @@ img.grayscale:hover {
   -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 .glyphicon {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /* Wrapper for page content to push down footer */
