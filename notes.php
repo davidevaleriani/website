@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Davide Valeriani - BCI Researcher</title>
+    <title>Davide Valeriani, PhD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -25,21 +25,13 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" role="navigation">
                         <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-                        <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Research <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="research.html#phd">Group Decision Making</a></li>
-                                <li><a href="research.html#cybathlon">Cybathlon 2016</a></li>
-                                <li><a href="research.html#eyewink">EyeWink</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="publications.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Publications</a></li>
+                        <li><a href="research.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Research</a></li>
+                        <li><a href="publications.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Publications</a></li>
+                        <li><a href="honors.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Honors</a></li>
                         <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
-                        <li><a href="media.html"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Talks & Media</a></li>
-                        <li class="active"><a href="notes.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Unipr</a></li>
-                        <li><a href="more.html"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span> More</a></li>
+                        <li><a href="outreach.html"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Outreach</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,6 +40,9 @@
             <h2>Unipr Notes</h2>
             <div class="row">
                 <div class="col-md-12">
+                  <div class="alert alert-info" role="alert">
+                    This page could now be reached from a link at the bottom of the <strong><a href="outreach.html">Outreach</a></strong> page.
+                  </div>
                 <p>In this page I share a bunch of notes that I have produced while I was a BEng and a MEng student at University of Parma. It includes lecture notes, coursework reports, solutions to lab assignments, etc. Most of the documents are written in Italian.</p>
                 <p>The underlying documents are protected by a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons</a> license:
                 you can share and use them for free, but you cannot sell them and you always have to acknowledge me as the original author.</p>
