@@ -40,20 +40,24 @@
               <p>My research focuses on developing neurotechnologies for human enhancement, using neuroimaging and machine learning. In particular, I merge brain and machines to achieve better decisions in critical domains. Below are a few examples.</p>
             <div class="row">
                 <div class="col-md-12">
-                    <a name="phd" class="anchor"></a>
                     <h3>Automatic Diagnostic Tools of Dystonia</h3>
                     <p>
                         Dystonia is a neurological movement disorder causing involuntary spasms in the muscles. Its causes are unknown and there are no objective diagnostic criteria.
-                    </p>
-                    <p>
-                        <img src="img/dystonianet-process.png" align="right" hspace="15px" vspace="10px" width="50%">
                         My current research is focused on developing machine learning tools to make automatic diagnosis of dystonia from
                         structural MRI. I envision the neurologist of the future ordering an MRI scan, loading the image into a software, and obtaining an accurate diagnosis for the patient in less than a minute. The output of the software could be used as a final diagnosis, or as an additional opinion to help clinicians with their diagnosis.
                     </p>
                     <p>
-                        We have shown that we are not far away for this vision to come true. In our <a href="https://doi.org/10.1073/pnas.2009165117" target="blank">PNAS paper</a>, we developed DystoniaNet, a convolutional neural network deep learning platform to discriminate patients with isolated focal dystonia from healthy controls from structural MRI data. DystoniaNet was trained on 160 patients with laryngeal dystonia and 160 controls, and optimized on additional 60 patients and controls, to provide the ability to assess its uncertainty and refer difficult cases to further examination. When testing its performance on 172 out-of-sample clinical patients, it achieved an accuracy of 98.8%, referring only 3.5% of patients to further examination.
+                        We have shown that we are not far away for this vision to come true. We developed <a href="https://doi.org/10.1073/pnas.2009165117" target="blank">DystoniaNet</a>, a convolutional neural network deep learning platform to discriminate patients with isolated focal dystonia from healthy controls from structural MRI data. DystoniaNet was trained on 160 patients with laryngeal dystonia and 160 controls, and optimized on additional 60 patients and controls, to provide the ability to assess its uncertainty and refer difficult cases to further examination. When testing its performance on 172 out-of-sample clinical patients, it achieved an accuracy of 98.8%, referring only 3.5% of patients to further examination.
+                    </p>
+                    <p>
+                        We are currently working on bringing DystoniaNet to the clinic by developing a user-friendly web interface for the doctor to use DystoniaNet. I used open-source Python libraries to deploy DystoniaNet on a web server. The animation below on the right shows the current workflow, where doctors can upload the MRI data and receive a diagnosis for the patient in seconds.
+                    </p>
+                    <p>
+                    <img src="img/dystonianet-process.png" hspace="15px" vspace="10px" width="50%">
+                    <img src="img/dystonianet_demo.gif" hspace="15px" vspace="10px" width="40%">
                     </p>
                     <hr>
+                    <a name="phd" class="anchor"></a>
                     <h3>Collaborative Brain-Computer Interfaces for Improving Group Decision Making</h3>
                     <p>
                         Groups are usually much better than individuals in making decisions (<a href="https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds" target="_blank">wisdom of crowds</a>). However, there are cases in which groups are not as accurate as expected, for example when composed of overconfident team members.</p>
@@ -126,7 +130,7 @@
     </div>
     <div id="footer">
         <div class="container">
-            <p class="muted credit">Copyright &copy; 2020 Davide Valeriani. All rights reserved.</p>
+            <p class="muted credit">Copyright &copy; 2021 Davide Valeriani. All rights reserved.</p>
         </div>
     </div>
 
