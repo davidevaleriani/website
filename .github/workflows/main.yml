@@ -2,14 +2,14 @@ on: push
 name: Publish Website
 jobs:
   FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         ftp-server: ftp://ftp.davidevaleriani.it/public_html
         ftp-username: me@davidevaleriani.it
