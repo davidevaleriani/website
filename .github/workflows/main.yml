@@ -11,6 +11,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp://ftp.davidevaleriani.it/public_html
+        server: ftp.davidevaleriani.it
         username: me@davidevaleriani.it
         password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: public_html/
