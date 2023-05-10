@@ -1,4 +1,4 @@
-on: push
+on: [push, workflow_dispatch]
 name: Publish Website
 jobs:
   FTP-Deploy-Action:
@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v3
     
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      uses: SamKirkland/FTP-Deploy-Action@4.3.4
       with:
         server: ftp.davidevaleriani.it
         username: me@davidevaleriani.it
