@@ -138,7 +138,7 @@ closedir($dir_handle);
     </div>
     <div id="footer">
         <div class="container">
-            <p class="muted credit">Copyright &copy; 2023 Davide Valeriani. All rights reserved.</p>
+            <p class="muted credit">Copyright &copy; 2024 Davide Valeriani. All rights reserved.</p>
         </div>
     </div>
 
