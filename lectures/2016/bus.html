@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>EyeWink e dintorni</title>
+
+		<meta name="author" content="Davide Valeriani">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/bus.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		D55C19 red
+		00FF80 green
+		00AFD8 turquoise
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background="pics/bci_diego_clear.png" data-background-transition="zoom">
+					<br><br>
+					<h1 style="text-shadow: 3px 0px 3px #ccc, 0px 3px 3px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee;">EyeWink e dintorni</h1>
+					<br>
+					<p style="color:#2190C1">
+						<strong>Davide Valeriani</strong><br>
+						<small>BCI-NE Laboratory<br>
+						University of Essex</small>
+					</p>
+					<br>
+					<table width="100%">
+						<tr>
+						<td align="left" width="30%" height="100px"><img data-src="pics/bci_logo_black.png"></td>
+						<td align="center"><img data-src="pics/eyewink_logo_black.png" height="100px"></td>
+						<td align="right" width="36%"><img src="pics/essex_logo_colours.png" style="padding-bottom: 10px" height="80px"></td>
+						</tr>
+					</table>
+				</section>
+
+				<section data-background="#F6EED7">
+					<h2>Mille mondi dell'informatica</h2>
+					<img src="pics/wordle_white.png" class="stretch">
+				</section>
+
+				<section data-background="#F6EED7">
+					<h2>Qualcosa di familiare</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+program Hello;
+uses crt;
+var age;
+begin
+  writeln ('Hello, world. Please insert your age:')
+  readln (age);
+  writeln ('Thank you!');
+  repeat until keypressed;
+end.
+					</code></pre>
+				</section>
+				<section>
+					<h2>Automazione di processi</h2>
+					<p class="fragment">Ovvero, programmare il computer per fare quelle operazioni ripetitive e noiose che non ci piacciono.</p>
+					<span class="fragment">
+					<p><strong>Esempio</strong>: tenere la contabilit&agrave;, registro elettronico, ecc.</p>
+					<img src="pics/auto_processi.jpg"></span>
+				</section>
+
+				<section>
+					<h2>Esempio: correzione compiti</h2>
+					<ul>
+						<li>Ogni studente &egrave; valutato da due docenti</li>
+						<li>Ogni docente compila un foglio Excel per ogni studente</li>
+						<li>Nel foglio di ogni studente vengono indicati i suoi dati</li>
+						<li>La segreteria fornisce i fogli precompilati ai docenti</li>
+					</ul>
+					<p>Problema: <span class="fragment">100 studenti = <strong>200 fogli da preparare</strong> :(</span></p>
+				</section>
+
+				<section>
+					<h2>Soluzione</h2>
+					<img src="pics/grades_automator.png" class="stretch">
+				</section>
+
+				<section>
+					<h2>Videogiochi</h2>
+					<img src="pics/snake.gif" height="400px">
+					<p>150 linee di codice Python!</p>
+					<p>Disponibile su <a href="https://github.com/davidevaleriani/python" target="blank">github.com/davidevaleriani/python</a></p>
+				</section>
+
+				<section>
+					<h2>AI nei videogiochi</h2>
+					<p>Scopo: battere l'umano</p>
+					<ul><li><strong>Scacchi</strong>: PC IBM vince su Kasparov (10 feb 1996)</li>
+					<li><strong>Go</strong>: PC Google batte campione europeo 2 dan (ott 2015)</li>
+					</ul>
+					<img class="fragment" src="pics/chess_go.gif" height="400px">
+				</section>
+
+				<section>
+					<h2>Paradosso di Moravec</h2>
+					<p><q>
+					"I compiti difficili per gli umani sono facili per i computer.<br>
+					<span class="fragment" data-autoslide="250">I compiti difficili per i computer sono facili per gli umani."</span></q></p>
+					<img src="pics/rubik.gif" style="float:left" height="300px">
+					<img class="fragment" src="pics/asimo.gif" style="float:right" height="300px">
+				</section>
+
+				<section>
+					<h2>Robotica industriale</h2>
+					<ul><li>Spazio di movimento limitato</li>
+					<li class="fragment">Usata per assemblaggio e movimentazione</li>
+					</ul>
+					<iframe width="600" height="400"
+						src="https://www.youtube.com/embed/OiDoOMXNdg8">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Ritorno alle origini!</h2>
+					<ul><li>Progetto: scrivere una libreria in C++ per controllare il robot.</li>
+					<li class="fragment">Primo passo: imparare il linguaggio PDL2.</li>
+					</ul>
+					<img class="fragment" data-src="pics/pdl2.png">
+				</section>
+
+				<section>
+					<h2>Comau SmartSix</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/oyJ-pXyIe_I">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Robotica mobile</h2>
+					<ul><li>Il robot pu&ograve; ora spostarsi nell'ambiente</li>
+					<li class="fragment" data-autoslide="1"><span class="fragment highlight-red">Visione artificiale</span> per <em>percepire</em> l'ambiente</li>
+					<li class="fragment" data-autoslide="1"><span class="fragment highlight-blue">Intelligenza artificiale (AI)</span> per <em>interpretarlo</em></li>
+					</ul>
+					<iframe width="600" height="400"
+						src="https://www.youtube.com/embed/mNkN5mby9gA">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Sick Robot Day 2012</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/4p7VZ7N0Xng">
+					</iframe>
+					<p class="fragment"><strong><em>https://youtu.be/4p7VZ7N0Xng</em></strong></p>
+				</section>
+
+				<section data-background="pics/bci_diego.png" data-background-transition="convex">
+					<h2 style="color: #000; text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee;">
+					Brain-Computer Interfaces
+					</h2>
+				</section>
+
+
+				<section>
+					<h2><span class="fragment highlight-red" data-fragment-index="1" data-autoslide="1">Brain</span>-<span class="fragment highlight-blue" data-fragment-index="3" data-autoslide="1">Computer</span> Interfaces</h2>
+					<div style="float: left;"><img data-src="pics/bci.jpg"></div>
+					<h4 style="color: #888">o "Interfacce neurali"</h4>
+					<p>Interfacce che permettono all'utente di controllare <span class="fragment highlight-blue" data-fragment-index="4">altri dispositivi</span> con il solo uso della <span class="fragment highlight-red" data-fragment-index="2">mente</span>.</p>
+					<p class="fragment">Nate per aiutare le persone affette da disabilit&agrave; a comunicare.</p>
+				</section>
+
+				<section>
+					<h2>Cervello umano</h2>
+					<p>Oltre <span style="color: #E8650C; font-weight: bold;">80 miliardi</span> di neuroni interconnessi.</p>
+					<img src="pics/neurons.jpg">
+				</section>
+
+				<section>
+					<h2>Event-related potentials</h2>
+					<blockquote>Ad ogni azione corrisponde una reazione (uguale e contraria)</blockquote>
+					<p>Attivit&agrave; cerebrale in risposta a un evento.</p>
+					<img src="pics/nontarget.png" width="40%">
+					<img src="pics/target.png" width="40%">
+				</section>
+
+				<section>
+					<h2>Come funzionano?</h2>
+					<img src="pics/bci_pipeline.png" width="100%">
+					<img src="pics/cap_with_wires.png" height="250px">
+					<img src="pics/biosemi.jpg" height="250px">
+				</section>
+
+				<section>
+					<h2>I nostri esperimenti</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/1EqeiiSnQRY">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Dove si usano</h2>
+					<ul>
+					<li><strong>Comunicazione</strong>: mouse e tastiera controllati con la mente</li>
+					<li><strong>Decisioni</strong>: ridurre gli errori in situazioni critiche</li>
+					<li><strong>Controllo</strong>: sedia a rotelle comandata con la mente</li>
+					<li><strong>Videogiochi</strong>: comandi addizionali (e.g., World of Warcraft)</li>
+					</ul>
+					<img src="pics/bci3.png">
+				</section>
+
+				<section>
+					<h2>Comunicazione</h2>
+					<img src="pics/speller.gif" class="stretch">
+				</section>
+
+				<section>
+					<h2>Decisioni</h2>
+					<ul class="fragment" data-autoslide="1">
+						<li>Tra poco vedrete un'immagine.</li>
+						<li>Siamo al circolo polare artico, quindi ci saranno tanti <span class="fragment highlight-blue" data-autoslide="1">pinguini</span>.</li>
+						<li>Il vostro obiettivo &egrave; trovare, se c'&egrave;, un <span class="fragment highlight-red">orso polare</span>.</li>
+					</ul>
+					<p class="fragment" data-autoslide="1">P.S. avrete <strong>250 ms</strong> a disposizione</p>
+					<h3 class="fragment">Pronti?</h3>
+				</section>
+
+				<section data-autoslide="2000">
+					<img src="pics/exp1.gif" width="100%">
+				</section>
+
+				<section>
+					<section data-transition="none">
+						<h2>In quanti hanno visto un orso?</h2>
+						<img class="fragment" src="pics/stimulus.png">
+					</section>
+					<section data-transition="none">
+						<h2>In quanti hanno visto un orso?</h2>
+						<img src="pics/stimulus_circle.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>BCI per le decisioni</h2>
+					<ul><li>Errori individuali: 18.5 %</li>
+					<li>Errori in coppia (usando la maggioranza): 18.5 %</li>
+					<li class="fragment"><strong>Idea</strong>: usare la BCI per stimare il grado di <strong>confidenza</strong></li>
+					<li class="fragment"><strong>Risultati</strong>: errori in coppia con BCI: <strong>13.8 %</strong></li>
+					</ul>
+					<img class="fragment" src="pics/group-decision.jpg">
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo_black.png" align="left" width="70px">EyeWink</h2>
+					<p class="fragment">Dispositivo per controllare lo smartphone con gli occhi</p>
+					<span class="fragment">
+					<ul><li>Sensori sulla fronte per rilevare movimenti oculari</li>
+					<li>Connessione allo smartphone via Bluetooth Low Energy</li>
+					<li>App per configurare il dispositivo</li>
+					</ul>
+					<img src="pics/eyewink_system.png" style="background:none; border:none; box-shadow:none; padding: 0; margin: 0" width="70%">
+					<p style="font-size: 12px">D. Valeriani and A. Matran-Fernandez, "Towards a wearable device for controlling a smartphone with eye winks," Computer Science and Electronic Engineering Conference (CEEC), 2015.</p>
+					</span>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo_black.png" align="left" width="70px">Movimenti oculari</h2>
+					<p>Esempi di segnali registrati per nessuna attivit&agrave;, occhiolino <span class="fragment highlight-red" data-autoslide="1">sinistro</span> e occhiolino <span class="fragment highlight-blue">destro</span></p>
+					<img src="pics/idle.png" height="230px">
+					<img src="pics/left_wink.png" height="230px">
+					<img src="pics/right_wink.png" height="230px">
+					<p style="font-size: 12px">D. Valeriani and A. Matran-Fernandez, "Towards a wearable device for controlling a smartphone with eye winks," Computer Science and Electronic Engineering Conference (CEEC), 2015.</p>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo_black.png" align="left" width="70px">EyeWink in azione</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/KS_V3HDkAkg">
+					</iframe>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo_black.png" align="left" width="70px">Startup</h2>
+					<ul><li class="fragment">Idea vincente di HackTheBrain UK (marzo 2015)</li>
+					<li class="fragment">Presentazione al London Science Museum in aprile 2015</li>
+					<li class="fragment">Campagna di crowdfunding in novembre 2015 (£ 4605)</li>
+					<li class="fragment">Nascita di EyeWink Ltd in dicembre 2015</li>
+					<li class="fragment">Lancio sul mercato entro l'anno</li>
+					<li class="fragment">Visitate <a href="http://www.eyewink.net">eyewink.net</a> e seguiteci sui social!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Cybathlon 2016</h2>
+					<p>Competizione internazionale per paratleti supportati dalla tecnologia: 8 ottobre 2016</p>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/Rx9I_hYqQcM">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Il videogioco</h2>
+					<ul><li class="fragment">Avatar che corre su un tracciato</li>
+					<li class="fragment">Piattaforme di quattro colori sparse sulla pista</li>
+					<li class="fragment">Ad ogni piattaforma corrisponde un comando diverso
+					<ul><li>Salta (viola)</li>
+					<li>Corri (blu)</li>
+					<li>Rotola (gialla)</li>
+					<li>Riposati (grigia)</li>
+					<img src="pics/game.png" style="position: absolute; left: 500px; top: 270px" width="40%">
+					</ul>
+					</li>
+					</ul>
+					<br><br>
+				</section>
+
+				<section>
+					<h2>Configurazione della BCI</h2>
+					<p>Comandi associati a diversi <strong>processi mentali</strong></p>
+					<ul><li class="fragment">Salta &rightarrow; Movimento immaginario delle <em>gambe</em></li>
+					<li class="fragment">Corri &rightarrow; <em>Calcolo</em> mentale</li>
+					<li class="fragment">Rotola &rightarrow; Immagina di sentire un <em>telefono</em> squillare</li>
+					<li class="fragment">Riposati &rightarrow; Non pensare a <em>nulla</em></li>
+					</ul>
+					<img src="pics/BCIUser.png" width="40%" class="fragment">
+				</section>
+
+				<section>
+					<h2>Training della BCI</h2>
+					<ul class="fragment"><li>Insegna al sistema a riconoscere i vari processi mentali fornendogli
+					<em>esercizi svolti</em></li>
+					<li>Esempio: {x+2=4, x+5=7} &rightarrow; x+10=?</li>
+					</ul>
+					<br><br>
+					<h4 class="fragment">Pi&ugrave; esempi diamo e meglio impara?</h4>
+					<p class="fragment"><strong>No</strong>, non &egrave; cos&igrave; "semplice"</p>
+				</section>
+
+				<section>
+					<h2>Siete pronti a provare?</h2>
+					<ul class="fragment">
+					<li>Useremo l'Emotiv Epoc, dispositivo commerciale "low-cost"</li>
+					<img src="pics/emotiv.png" width="300px" align="right">
+					<li>Elettrodi bagnati con acqua e sale</li>
+					<li>Per semplificare, non useremo il comando "rotola" (telefono)</li>
+					<li>Non aspettatevi risultati strabilianti: &egrave; low-cost</li>
+					</ul>
+					<h1 class="fragment">Volontari?</h1>
+				</section>
+
+
+
+				<section style="text-align: left;">
+					<h1>FINE</h1>
+					<h2>Domande?</h2>
+					<span class="fragment">
+					<p>Nel caso ve ne venissero altre in futuro, contattatemi:</p>
+					<ul><li>Email: <em>davide.valeriani@gmail.com</em></li>
+					<li>Web: <a href="http://www.davidevaleriani.it">www.davidevaleriani.it</a></li>
+					<li>Facebook, Twitter, LinkedIn, etc.</li>
+					</ul>
+					</span>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+				keyboard: true,
+				touch: true,
+				autoSlide: 0,
+				previewLinks: false,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'zoom',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

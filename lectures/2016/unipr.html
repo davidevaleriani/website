@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Brain-Computer Interfaces</title>
+
+		<meta name="author" content="Davide Valeriani">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		D55C19 red
+		00FF80 green
+		00AFD8 turquoise
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="pics/bci_diego_clear.png" data-background-transition="zoom">
+					<br><br>
+					<h2>Brain-Computer Interfaces</h2>
+					<p><small style="font-size: 30px">Dalle interfacce neurali al controllo dello smartphone con gli occhi</small></p>
+					<br>
+					<p style="color:#E8650C">
+						<strong>Davide Valeriani</strong><br>
+						<small>BCI-NE Laboratory<br>
+						University of Essex</small>
+					</p>
+					<br>
+					<table width="100%">
+						<tr>
+						<td align="left" width="30%" height="100px"><img data-src="pics/bci_logo.png" style="background:none; border:none;box-shadow:none;" ></td>
+						<td align="center"><img data-src="pics/eyewink_logo.png" style="background:none; border:none;box-shadow:none;" height="100px"></td>
+						<td align="right" width="36%"><img src="pics/essex_logo.png" style="background:none; border:none; box-shadow:none; padding-bottom: 10px" height="80px"></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2><span class="fragment highlight-red" data-fragment-index="1" data-autoslide="250">Brain</span>-<span class="fragment highlight-blue" data-fragment-index="3" data-autoslide="250">Computer</span> <span class="fragment highlight-green" data-fragment-index="5" data-autoslide="250">Interfaces</span></h2>
+					<div style="float: left;"><img data-src="pics/bci.jpg"></div>
+					<h4 style="color: #888">o "Interfacce neurali"</h4>
+					<p><span class="fragment highlight-green" data-fragment-index="6">Interfacce</span> che permettono all'utente di controllare <span class="fragment highlight-blue" data-fragment-index="4">altri dispositivi</span> con il solo uso della <span class="fragment highlight-red" data-fragment-index="2">mente</span>.</p>
+					<p class="fragment">Nate per aiutare le persone affette da disabilit&agrave; a comunicare.</p>
+				</section>
+
+				<section>
+					<h2>Cervello umano</h2>
+					<p>Oltre <span style="color: #FFFC19">80 miliardi</span> di neuroni interconnessi.</p>
+					<img src="pics/neurons.jpg">
+				</section>
+
+				<section>
+					<h2>Event-related potentials</h2>
+					<p>Reazione del cervello al verificarsi di un evento.</p>
+					<p>Vari ERPs conosciuti: <span style="color: #FFFC19">P300</span> il pi&ugrave; usato in BCI.</p>
+					<img src="pics/nontarget.png" width="40%" style="background:none; border:none; box-shadow:none;">
+					<img src="pics/target.png" width="40%" style="background:none; border:none; box-shadow:none;">
+				</section>
+
+				<section>
+					<h2>Come funzionano?</h2>
+					<img src="pics/bci_pipeline.png" class="stretch">
+				</section>
+
+				<section>
+					<h2>Elettroencefalografia (EEG)</h2>
+					<p>Metodo <span style="color: #FFFC19">non invasivo</span> pi&ugrave; utilizzato per acquisire i segnali cerebrali.</p>
+					<img src="pics/cap_with_wires.png" height="350px">
+					<img src="pics/biosemi.jpg" height="350px">
+				</section>
+
+				<section>
+					<h2>Rumore</h2>
+					<ul><li>Sovrapposizione di ERPs e altri processi mentali</li>
+					<li>Rumore di acquisizione</li>
+					</ul>
+					<span class="fragment">
+					<img src="pics/ideal_erps.png" height="350px">
+					<img src="pics/real_erps.png" height="350px">
+					</span>
+				</section>
+
+				<section>
+					<h2>Esempio di esperimento</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/1EqeiiSnQRY">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Dove si usano</h2>
+					<ul>
+					<li><strong>Comunicazione</strong>: mouse e tastiera controllati con la mente</li>
+					<li><strong>Controllo</strong>: sedia a rotelle comandata con la mente</li>
+					<li><strong>Decisioni</strong>: ridurre gli errori in situazioni critiche</li>
+					<li><strong>Videogiochi</strong>: controllo completo o complementare</li>
+					</ul>
+					<img src="pics/bci3.png">
+				</section>
+
+				<section>
+					<h2>BCI Speller</h2>
+					<img src="pics/speller.gif" style="background:none; border:none; box-shadow:none;" class="stretch">
+				</section>
+
+				<section>
+					<h2>BCI Mouse</h2>
+					<img src="pics/mouse.gif" style="background:none; border:none; box-shadow:none;" class="stretch">
+				</section>
+
+				<section>
+					<h2>BCI Wheelchair</h2>
+					<img src="pics/wheelchair.gif" style="background:none; border:none; box-shadow:none;" class="stretch">
+				</section>
+
+				<section>
+					<h2>BCI per le decisioni</h2>
+					<ul>
+					<li class="fragment" data-fragment-index="0" data-autoslide="1"><span style="color: #FFFC19">Gruppi</span> usati per prendere decisioni critiche in vari campi</li>
+					<li class="fragment">Usare i segnali neurali per stimare la <span style="color: #FFFC19">confidenza</span></li>
+					<li class="fragment">Pesare le risposte dei singoli sulla base della confidenza</li>
+					<li class="fragment">Applicazioni in finanza, medicina e difesa</li>
+					</ul>
+					<img src="pics/group-decision.jpg" class="fragment" data-fragment-index="1">
+				</section>
+
+				<section>
+					<h2>BCI per le decisioni (cont.)</h2>
+					<ul>
+					<li class="fragment">Machine learning per stimare la confidenza</li>
+					<li class="fragment"><span style="color: #FFFC19">Correttezza</span> nella risposta usata per addestramento</li>
+					<li class="fragment">Risposta giusta = utente sicuro<br>Risposta sbagliata = utente insicuro</li>
+					</ul>
+					<img class="fragment" src="pics/erps_rlckd.png">
+				</section>
+
+				<section>
+					<h2>Facciamo una prova</h2>
+					<ul class="fragment" data-autoslide="1">
+						<li>Tra poco vedrete un'immagine.</li>
+						<li>Siamo al circolo polare artico, quindi ci saranno tanti <span class="fragment highlight-blue" data-autoslide="1">pinguini</span>.</li>
+						<li>Il vostro obiettivo &egrave; trovare, se c'&egrave;, un <span class="fragment highlight-green">orso polare</span>.</li>
+					</ul>
+					<p class="fragment" data-autoslide="1">P.S. avete <span class="fragment highlight-red">250 ms</span> a disposizione</p>
+					<h3 class="fragment">Pronti?</h3>
+				</section>
+
+				<section data-autoslide="2000">
+					<img src="pics/exp1.gif" width="100%">
+				</section>
+
+				<section>
+					<section data-transition="none">
+						<h2>In quanti hanno visto un orso?</h2>
+						<img class="fragment" src="pics/stimulus.png">
+					</section>
+					<section data-transition="none">
+						<h2>In quanti hanno visto un orso?</h2>
+						<img src="pics/stimulus_circle.png">
+					</section>
+				</section>
+
+				<section>
+					<h2>Risultati della BCI</h2>
+					<img src="pics/bci_decisions.png" height="450px">
+					<p style="font-size: 16px" align="left">D. Valeriani, R. Poli, C. Cinel, "A Collaborative Brain-Computer Interface for Improving Group Detection of Visual Targets in Complex Natural Environments," 7th International IEEE/EMBS Conference on Neural Engineering (NER), 2015.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Diversi esperimenti</h2>
+						<p>Sistema messo alla prova con diversi task:</p>
+						<ul><li class="fragment" data-fragment-index="1" data-autoslide="1">Visual matching [1]</li>
+						<li class="fragment" data-fragment-index="3" data-autoslide="1">Visual search con stimoli artificiali [2]</li>
+						<li class="fragment" data-fragment-index="5" data-autoslide="1">Visual search con stimoli realistici [3]</li>
+						<li class="fragment" data-fragment-index="7" data-autoslide="1">Riconoscimento di parole in registrazioni audio [4]</li>
+						</ul>
+						<p class="fragment" data-fragment-index="9">Futuro &rightarrow; riconoscimento facce</p>
+						<p style="font-size: 16px" align="left">
+							<span class="fragment" data-fragment-index="2">
+							[1] R. Poli, D. Valeriani, C. Cinel, "Collaborative Brain-Computer Interface for Aiding Decision-making," PLoS One, vol. 9, no.7, Jul. 2014.</span>
+							<br>
+							<span class="fragment" data-fragment-index="4">
+							[2] D. Valeriani, R. Poli, C. Cinel, "A Collaborative Brain-Computer Interface to Improve Human Performance in a Visual Search Task," 7th International IEEE/EMBS Conference on Neural Engineering (NER), 2015.</span>
+							<br>
+							<span class="fragment" data-fragment-index="6">
+							[3] D. Valeriani, R. Poli, C. Cinel, "A Collaborative Brain-Computer Interface for Improving Group Detection of Visual Targets in Complex Natural Environments," 7th International IEEE/EMBS Conference on Neural Engineering (NER), 2015.</span>
+							<br>
+							<span class="fragment" data-fragment-index="8">
+							[4] D. Valeriani, R. Poli, C. Cinel, "Improving Speech Perception with Collaborative Brain-Computer Interfaces," 38th Annual International Conference of the IEEE EMBS, 2016.</span>
+						</p>
+					</section>
+					<section>
+						<h2>Visual matching</h2>
+						<img src="pics/plos_stim1.png" width="48%" style="background:none; border:none; box-shadow:none;">
+						<img src="pics/plos_stim2.png" width="48%" style="background:none; border:none; box-shadow:none;">
+					</section>
+					<section>
+						<h2>Visual search<br><small>Stimoli artificiali</small></h2>
+						<img src="pics/bars.png" class="stretch" style="background:none; border:none; box-shadow:none;">
+					</section>
+					<section>
+						<h2>Visual search<br><small>Stimoli realistici</small></h2>
+						<img src="pics/bears.png" class="stretch" style="background:none; border:none; box-shadow:none;">
+					</section>
+					<section>
+						<h2>Riconoscimento parole</h2>
+						<audio src="area_check.mp3" controls="true"></audio>
+						<p>Hai sentito una di queste parole?</p>
+						<ul><li>Route</li>
+						<li>Lookout</li>
+						<li>Village</li>
+						<li>Grid</li>
+						<li>Check</li>
+						<li>Trucks</li>
+						<li>Side</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Cybathlon 2016</h2>
+					<p>Competizione internazionale per paratleti supportati dalla tecnologia: 8 ottobre 2016</p>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/Rx9I_hYqQcM">
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Il videogioco</h2>
+					<ul><li class="fragment">Avatar che corre su un tracciato</li>
+					<li class="fragment">Piattaforme di quattro colori sparse sulla pista</li>
+					<li class="fragment">Ad ogni piattaforma corrisponde un comando diverso
+					<ul><li>Salta (viola)</li>
+					<li>Corri (blu)</li>
+					<li>Rotola (gialla)</li>
+					<li>Riposati (grigia)</li>
+					<img src="pics/game.png" style="position: absolute; left: 500px; top: 270px" width="40%">
+					</ul>
+					</li>
+					</ul>
+					<br><br>
+				</section>
+
+				<section>
+				<section>
+					<h2>Configurazione della BCI</h2>
+					<p>Comandi associati a diversi <strong>processi mentali</strong></p>
+					<ul><li class="fragment">Salta &rightarrow; Immagina di muovere le <span style="color: #FFFC19">gambe</span></li>
+					<li class="fragment">Corri &rightarrow; Fai un <span style="color: #FFFC19">calcolo</span> mentale</li>
+					<li class="fragment">Rotola &rightarrow; Immagina di sentire un <span style="color: #FFFC19">telefono</span> squillare</li>
+					<li class="fragment">Riposati &rightarrow; Non pensare a <span style="color: #FFFC19">nulla</span></li>
+					</ul>
+					<img src="pics/BCIUser.png" width="40%" class="fragment">
+				</section>
+
+				<section>
+					<h2>Siete pronti a provare?</h2>
+					<ul class="fragment">
+					<li>Useremo l'Emotiv Epoc, dispositivo commerciale "low-cost"</li>
+					<img src="pics/emotiv.png" width="300px" align="right" style="background:none; border:none; box-shadow:none;">
+					<li>Elettrodi bagnati con acqua e sale</li>
+					<li>Per semplificare, non useremo il comando "rotola" (telefono)</li>
+					<li>Non aspettatevi risultati strabilianti: &egrave; low-cost</li>
+					</ul>
+					<h1 class="fragment">Volontari?</h1>
+				</section>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo.png" align="left" width="70px" style="background:none; border:none; box-shadow:none;">EyeWink</h2>
+					<p class="fragment">Dispositivo per controllare lo smartphone con gli occhi</p>
+					<span class="fragment">
+					<ul><li>Sensori sulla fronte per rilevare movimenti oculari</li>
+					<li>Connessione allo smartphone via Bluetooth Low Energy</li>
+					<li>App per configurare il dispositivo</li>
+					</ul>
+					<img src="pics/eyewink_system.png" style="background:none; border:none; box-shadow:none; padding: 0; margin: 0" width="70%">
+					<p style="font-size: 16px" align="left">D. Valeriani and A. Matran-Fernandez, "Towards a wearable device for controlling a smartphone with eye winks," Computer Science and Electronic Engineering Conference (CEEC), 2015.</p>
+					</span>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo.png" align="left" width="70px" style="background:none; border:none; box-shadow:none;">Movimenti oculari</h2>
+					<p>Esempi di segnali registrati per nessuna attivit&agrave;, occhiolino <span class="fragment highlight-red" data-autoslide="1">sinistro</span> e occhiolino <span class="fragment highlight-blue">destro</span></p>
+					<img src="pics/idle.png" height="200px">
+					<img src="pics/left_wink.png" height="200px">
+					<img src="pics/right_wink.png" height="200px">
+					<p style="font-size: 16px" align="left">D. Valeriani and A. Matran-Fernandez, "Towards a wearable device for controlling a smartphone with eye winks," Computer Science and Electronic Engineering Conference (CEEC), 2015.</p>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo.png" align="left" width="70px" style="background:none; border:none; box-shadow:none;">EyeWink in azione</h2>
+					<iframe width="800" height="600"
+						src="https://www.youtube.com/embed/KS_V3HDkAkg">
+					</iframe>
+				</section>
+
+				<section>
+					<h2><img src="pics/eyewink_logo.png" align="left" width="70px" style="background:none; border:none; box-shadow:none;">Startup</h2>
+					<ul><li class="fragment">Idea vincente di HackTheBrain UK (marzo 2015)</li>
+					<li class="fragment">Presentazione al <span style="color: #FFFC19">London Science Museum</span> in aprile 2015</li>
+					<li class="fragment">Campagna di <span style="color: #FFFC19">crowdfunding</span> in novembre 2015 (£ 4605)</li>
+					<li class="fragment">Nascita di <span style="color: #FFFC19">EyeWink Ltd</span> in dicembre 2015</li>
+					<li class="fragment">Lancio sul mercato entro l'anno</li>
+					<li class="fragment">Visitate <a href="http://www.eyewink.net">eyewink.net</a> e seguiteci sui social!</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>That's all folks!</h1>
+					<h2>Domande?</h2>
+					<span class="fragment">
+					<p>Nel caso ve ne venissero altre in futuro, contattatemi:</p>
+					<ul><li>Email: <em>davide.valeriani@gmail.com</em></li>
+					<li>Web: <a href="http://www.davidevaleriani.it">www.davidevaleriani.it</a></li>
+					<li>Facebook, Twitter, LinkedIn, etc.</li>
+					</ul>
+					</span>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+				keyboard: true,
+				touch: true,
+				autoSlide: 0,
+				previewLinks: false,
+
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'zoom',
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
