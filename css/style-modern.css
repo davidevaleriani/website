@@ -1,0 +1,644 @@
+/* Minimal Modern Design - 2026 */
+
+:root {
+  --primary: #000000;
+  --accent: #0066ff;
+  --text: #1a1a1a;
+  --text-light: #666666;
+  --bg: #ffffff;
+  --bg-alt: #fafafa;
+  --border: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure glyphicons use correct font - Override any parent font settings */
+.glyphicon,
+.glyphicon:before {
+  font-family: 'Glyphicons Halflings' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Navigation - Minimal Top Bar */
+.navbar {
+  background: var(--bg);
+  border: none;
+  border-bottom: 1px solid var(--border);
+  min-height: 48px;
+  height: 48px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-fixed-top {
+  border-radius: 0;
+}
+
+.navbar .container {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 0;
+}
+
+.navbar-header {
+  float: none;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  float: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.navbar-collapse {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-nav > li > a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-light);
+  padding: 14px 16px;
+  letter-spacing: 0.3px;
+  border: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav > li > a .glyphicon {
+  margin-right: 6px;
+  font-size: 13px;
+  font-family: 'Glyphicons Halflings' !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: var(--primary);
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
+  color: var(--primary);
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  font-weight: 600;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar-toggle {
+  margin-top: 13px;
+  border: 1px solid var(--border);
+}
+
+.navbar-toggle .icon-bar {
+  background-color: var(--text);
+}
+
+/* Main Content */
+body {
+  padding-top: 48px;
+}
+
+#wrap {
+  min-height: 100%;
+  margin: 0 auto -80px;
+  padding-bottom: 80px;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 20px 30px 40px 30px;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.3;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+h2 i {
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  color: var(--text);
+}
+
+h3 i {
+  color: var(--accent);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+small {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--accent);
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Profile Section - Hero Style */
+.row:first-of-type {
+  margin-bottom: 3rem;
+}
+
+img.img-rounded {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+img.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+img.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+img.grayscale:hover {
+  filter: grayscale(0%);
+}
+
+/* Alert - Minimal Style */
+.alert {
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  margin: 2rem 0;
+}
+
+.alert-success {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+}
+
+.alert-success strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.alert-success a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Lists - Minimal */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 0;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Only add custom bullets to lists without specific classes */
+ul:not(.fa-ul):not(.nav):not(.navbar-nav) li {
+  padding-left: 0;
+}
+
+ul:not(.fa-ul):not(.nav):not(.navbar-nav) li:before {
+  content: none;
+}
+
+ul.fa-ul li {
+  padding-left: 0;
+}
+
+ul.fa-ul li:before {
+  display: none;
+}
+
+.fa-li {
+  position: absolute;
+  left: -2rem;
+  width: 1.5rem;
+  text-align: center;
+  color: var(--accent);
+  font-size: 15px;
+  line-height: inherit;
+}
+
+ul.fa-ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 2.5rem;
+}
+
+ul.fa-ul li {
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul.fa-ul li:before {
+  display: none;
+}
+
+/* Labels/Badges - Minimal */
+.label {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 3px;
+  background: var(--bg-alt);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  margin: 0 4px 4px 0;
+  letter-spacing: 0.3px;
+}
+
+/* Grid */
+.row {
+  margin-bottom: 1rem;
+}
+
+/* Icons - Clean and Visible - Don't override Bootstrap's glyphicon styling */
+span.glyphicon {
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.fa, .fas, .far, .fab, .fa-brands {
+  margin-right: 6px;
+}
+
+/* Contact link icons */
+a .fa, a .fas, a .ai, a .fa-brands {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+a:hover .fa, a:hover .fas, a:hover .ai, a:hover .fa-brands {
+  opacity: 1;
+}
+
+/* Footer - Minimal */
+#footer {
+  height: 80px;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .container {
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-light);
+  text-align: center;
+}
+
+#push {
+  height: 80px;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improved Spacing */
+.col-md-2 img {
+  width: 100%;
+  max-width: 140px;
+}
+
+/* Better visual hierarchy */
+.col-md-4 h3,
+.col-md-2 h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.col-md-4 ul.fa-ul li,
+.col-md-2 ul.fa-ul li {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+/* Publications and content pages */
+.col-md-12 ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.col-md-12 ul li p {
+  margin: 0.25rem 0;
+}
+
+/* Publication titles - make them more prominent */
+.col-md-12 ul li em {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 600;
+  display: inline;
+}
+
+/* Author name (Valeriani D) - bold and italic */
+.col-md-12 ul li p strong {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Anchor links */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+/* Module spacing */
+.module {
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .container {
+    padding: 50px 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .navbar {
+    min-height: 60px;
+    height: auto;
+  }
+
+  .navbar-nav > li > a {
+    padding: 15px 12px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px 20px 30px 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 1.5rem;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-6,
+  .col-md-9,
+  .col-md-12 {
+    margin-bottom: 2rem;
+  }
+
+  img.img-rounded {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  .col-md-12 p {
+    font-size: 16px !important;
+  }
+
+  .col-md-12 > div {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .col-md-3, .col-md-9 {
+    text-align: center !important;
+  }
+
+  .col-md-3 a {
+    display: inline-block !important;
+    margin: 0 0.5rem !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding-top: 0;
+  }
+
+  .navbar,
+  #footer {
+    display: none;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Smooth interactions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus states */
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Remove Bootstrap overrides */
+.btn-link {
+  color: var(--accent);
+}
+
+.text-muted {
+  color: var(--text-light);
+}
+
+/* Clean table styling if any */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Iframe responsive */
+iframe {
+  max-width: 100%;
+}
+
+/* Fine-tune content density */
+.alert ul {
+  margin: 0.5rem 0 0 0;
+}
+
+.alert ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Better link styling in content */
+.col-md-12 a,
+.alert a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 102, 255, 0.3);
+  text-underline-offset: 2px;
+}
+
+.col-md-12 a:hover,
+.alert a:hover {
+  text-decoration-color: var(--accent);
+}

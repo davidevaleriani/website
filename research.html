@@ -17,8 +17,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/font.css" type='text/css'>
+    <link href="css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe8a7a2c0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-modern.css">
 </head>
 <body>
     <div id="wrap">
@@ -35,18 +38,17 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav" role="navigation">
-                        <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-                        <li class="active"><a href="research.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Research</a></li>
-                        <li><a href="publications.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Publications</a></li>
-                        <li><a href="honors.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Honors</a></li>
-                        <li><a href="teaching.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Teaching</a></li>
-                        <li><a href="outreach.html"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Outreach</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li class="active"><a href="research.html"><span class="glyphicon glyphicon-search"></span> Research</a></li>
+                        <li><a href="publications.html"><span class="glyphicon glyphicon-book"></span> Publications</a></li>
+                        <li><a href="honors.html"><span class="glyphicon glyphicon-star"></span> Honors</a></li>
+                        <li><a href="leadership.html"><span class="glyphicon glyphicon-flag"></span> Leadership</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <h2>Research</h2>
+            <h2 style="margin-top: 0;">Research</h2>
               <p>My research focuses on developing neurotechnologies for human enhancement, using neuroimaging and machine learning. In particular, I merge brain and machines to achieve better decisions in critical domains. Below are a few examples.</p>
             <div class="row">
                 <div class="col-md-12">
@@ -55,6 +57,9 @@
                         Dystonia is a neurological movement disorder causing involuntary spasms in the muscles. Its causes are unknown and there are no objective diagnostic criteria.
                         My current research is focused on developing machine learning tools to make automatic diagnosis of dystonia from
                         structural MRI. I envision the neurologist of the future ordering an MRI scan, loading the image into a software, and obtaining an accurate diagnosis for the patient in less than a minute. The output of the software could be used as a final diagnosis, or as an additional opinion to help clinicians with their diagnosis.
+                    </p>
+                    <p align="center">
+                        <img src="img/mee_DV.gif" width="60%" />
                     </p>
                     <p>
                         We have shown that we are not far away for this vision to come true. We developed <a href="https://doi.org/10.1073/pnas.2009165117" target="blank">DystoniaNet</a>, a convolutional neural network deep learning platform to discriminate patients with isolated focal dystonia from healthy controls from structural MRI data. DystoniaNet was trained on 160 patients with laryngeal dystonia and 160 controls, and optimized on additional 60 patients and controls, to provide the ability to assess its uncertainty and refer difficult cases to further examination. When testing its performance on 172 out-of-sample clinical patients, it achieved an accuracy of 98.8%, referring only 3.5% of patients to further examination.
@@ -66,7 +71,6 @@
                     <img src="img/dystonianet-process.png" hspace="15px" vspace="10px" width="50%">
                     <img src="img/dystonianet_demo.gif" hspace="15px" vspace="10px" width="40%">
                     </p>
-                    <hr>
                     <a name="phd" class="anchor"></a>
                     <h3>Collaborative Brain-Computer Interfaces for Improving Group Decision Making</h3>
                     <p>
@@ -91,7 +95,6 @@
                         <img src="img/Cyborg.jpg" width="25%" align="right" hspace="15px" vspace="0px" />
                         I have also tested the collaborative BCI with <em>cyborg groups</em>, i.e., groups that include humans as well as algorithms that are autonomously able to make their own decisions and estimate their confidence. <a href="https://doi.org/10.1371/journal.pone.0212935" target="blank">This research</a> implemented effective human-machine teams for accurate face recognition in crowded environments, a critical task in surveillance. We used a <a href="https://github.com/ageitgey/face_recognition" target="blank">residual neural network</a> (ResNet) trained on millions of images to automatically classify each stimulus as containing or not the target face. Moreover, we gave the ResNet the ability of estimating its own confidence. Our results show that humans and machines working together achieve significantly better decisions than individually. We are now bringing this concept forward thanks to the funding provided jointly by the US DoD and UK MoD with the BARI project (see <a href="honors.html">Honors</a>). See our <a href="https://doi.org/10.1088/1741-2552/ac96a5" target="_blank">recent publication</a> in this domain.
 
-                    <hr>
                     <h3>Bringing Brain-Computer Interfaces to People with Disabilities</h3>
                     <p>
                         Many BCIs developed in research labs are never translated into useful tools for people in needs. Pushed by the <a href="http://www.cybathlon.ethz.ch/en/" target="_blank">Cybathlon</a> competition, in 2015 I have teamed up with other PhD students and postdocs at the University of Essex to create the team <a href="http://essexbcis.uk/main/cybathlon/team/" target="_blank">Brainstormers</a>. Our aim was to develop a real-time BCI to allow <a href="http://essexbcis.uk/main/cybathlon/pilot/" target="blank">David</a> to control a videogame with his brain signals.
@@ -102,11 +105,10 @@
                     <p>
                         The BrainStormers were supported by <a href="http://www.biosemi.com/" target="blank">Biosemi</a>, by the University of Essex, and by a crowdfunding campaign with which we raised more than &pound;3,000. Our work has attracted the interest of the media including <a href="http://www.itv.com/news/anglia/2016-05-18/essex-team-hope-to-storm-to-success-at-worlds-first-ever-cybathlon-competition/" target="_blank"><strong>ITV Anglia</strong></a> and <a href="https://cybathlon.wordpress.com/2015/01/29/brainstormers-and-bcis-on-your-marks-set-think/" target="_blank">Inside Cybathlon</a>.
                     </p>
-                    <p align="center">
-                        <img src="img/david_race.jpg" height="300px" />
-                        <img src="img/brainstormers.jpg" height="300px" />
+                    <p align="center" style="white-space: nowrap;">
+                        <img src="img/david_race.jpg" style="display: inline-block; margin: 0 10px; height: 300px; width: auto; max-width: 45%; vertical-align: top;" />
+                        <img src="img/brainstormers.jpg" style="display: inline-block; margin: 0 10px; height: 300px; width: auto; max-width: 45%; vertical-align: top;" />
                     </p>
-                    <hr>
                     <h3>Novel Human-Machine Interfaces</h3>
                     <img src="img/eyewink_logo.png" align="right" hspace="15px" width="20%">
                     <p>
@@ -128,19 +130,15 @@
                         and <a href="https://www.youtube.com/watch?v=403Uc5LlKE8" target="_blank">Radio Citt&agrave; Aperta</a>.
                     </p>
                     <p align="center">
-                        <img src="img/eyewink_lates.jpg" height="300px" />
-                        <iframe width="533" height="300" src="https://www.youtube.com/embed/1fRnrFB8ndI" frameborder="0" allowfullscreen align="right"></iframe>
+                        <img src="img/eyewink_lates.jpg" style="display: inline-block; margin: 0 10px; height: 300px; width: auto; max-width: 45%; vertical-align: top;" />
                     </p>
-
-
                 </div>
             </div>
         </div>
-        <div id="push"></div>
     </div>
     <div id="footer">
         <div class="container">
-            <p class="muted credit">Copyright &copy; 2024 Davide Valeriani. All rights reserved.</p>
+            <p class="muted credit">Copyright &copy; 2026 Davide Valeriani. All rights reserved.</p>
         </div>
     </div>
 
