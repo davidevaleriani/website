@@ -253,12 +253,12 @@ img.img-responsive {
 }
 
 img.grayscale {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: filter 0.3s ease;
 }
 
 img.grayscale:hover {
-  filter: grayscale(0%);
+  filter: grayscale(50%);
 }
 
 /* Alert - Minimal Style */
